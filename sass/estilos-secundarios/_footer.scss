@@ -1,0 +1,19 @@
+// Estilos de Footer
+
+/* Estilos de Footer */ 
+footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: $color-bg4;
+    a{
+        text-decoration: none;
+        color: $color-letra1;
+        font-size: 1.5rem;
+        &:hover{
+            color: $color-trans1;
+        }
+    }
+    p{
+        color: $color-letra1;
+    }
+}

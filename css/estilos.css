@@ -1,0 +1,341 @@
+/* Fuente de letras */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Body: Index */
+body {
+  font-family: 'Urbanist', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/* Encabezado y Menu de Navegacion */
+body header {
+  width: 100vw;
+  height: 6.25rem;
+  background-color: #fff;
+  box-shadow: 0rem 0.1875rem 0.5rem black;
+  display: flex;
+  align-content: center; }
+  body header .container-fluid {
+    width: 100%;
+    padding: 0 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Modal */ }
+    body header .container-fluid .navb-logo img {
+      width: 6.25rem; }
+    body header .container-fluid .navb-items {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      letter-spacing: 0.1875rem; }
+      body header .container-fluid .navb-items .item {
+        text-align: center;
+        margin-inline: 15%;
+        font-size: 1.25rem;
+        letter-spacing: 0.1875rem;
+        color: #102447;
+        padding: 0.3125rem 0;
+        transition: all .1s ease;
+        border-bottom: 0rem solid #274d8a;
+        border-top: 0rem solid #274d8a;
+        cursor: pointer; }
+        body header .container-fluid .navb-items .item:hover {
+          border-bottom: 0.1875rem solid #274d8a;
+          border-top: 0.1875rem solid #274d8a; }
+        body header .container-fluid .navb-items .item a {
+          text-decoration: none;
+          color: currentColor; }
+          body header .container-fluid .navb-items .item a:hover {
+            color: currentColor; }
+      body header .container-fluid .navb-items .item-button a {
+        background-color: #274d8a;
+        text-decoration: none;
+        color: currentColor;
+        width: 9.375rem;
+        height: 3.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FFF;
+        transition: all .5s ease; }
+        body header .container-fluid .navb-items .item-button a:hover {
+          background-color: #b70e21; }
+    body header .container-fluid .modal .modal-dialog {
+      margin: 0;
+      width: 26,875rem; }
+      body header .container-fluid .modal .modal-dialog .modal-content {
+        border-radius: 0;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #102447; }
+        body header .container-fluid .modal .modal-dialog .modal-content .modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 88%;
+          margin: 0 auto;
+          padding-bottom: 1rem;
+          border-bottom: 0.125rem solid #fefefe; }
+          body header .container-fluid .modal .modal-dialog .modal-content .modal-header img {
+            width: 6.25rem;
+            margin-top: 1,09375rem; }
+          body header .container-fluid .modal .modal-dialog .modal-content .modal-header .btn-close {
+            background: transparent;
+            opacity: 1; }
+            body header .container-fluid .modal .modal-dialog .modal-content .modal-header .btn-close i {
+              color: #fefefe;
+              font-size: 1,875rem; }
+        body header .container-fluid .modal .modal-dialog .modal-content .modal-body {
+          width: 88%;
+          margin: 0 auto;
+          padding: 4.6875rem 0 0 0;
+          flex: unset; }
+          body header .container-fluid .modal .modal-dialog .modal-content .modal-body .modal-line {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0.4375rem 0;
+            margin-bottom: 3.125rem;
+            cursor: pointer;
+            color: #274d8a;
+            border-bottom: 0.0625rem solid #274d8a; }
+            body header .container-fluid .modal .modal-dialog .modal-content .modal-body .modal-line i {
+              color: currentColor;
+              font-size: 1.875rem;
+              width: 2.1875rem;
+              letter-spacing: 0.15625rem;
+              margin-right: 0.9375rem;
+              padding: 0 0 0.1875rem 0.1875rem; }
+            body header .container-fluid .modal .modal-dialog .modal-content .modal-body .modal-line a {
+              font-size: 1.0625rem;
+              font-weight: 500;
+              letter-spacing: 0.15625rem;
+              color: #fefefe;
+              text-decoration: none; }
+          body header .container-fluid .modal .modal-dialog .modal-content .modal-body .navb-button {
+            width: 100%;
+            height: 2.9375rem;
+            background-color: #fefefe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #274d8a;
+            letter-spacing: 0.125rem; }
+
+/* Estilos de Main */
+/* Estilos de Main: Home */
+main .container-main .texto .titulo-index {
+  color: #274d8a;
+  text-align: center;
+  font-weight: 900;
+  padding: 1rem; }
+
+main .container-main .texto .parrafo-index1 {
+  font-size: 1.5rem;
+  padding: 0 1rem; }
+
+main .container-main .texto .parrafo-index2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #274d8a; }
+
+main .container-main img {
+  display: none; }
+
+/* Estilos de Main: Integrantes */
+main .titulo-integrantes {
+  text-align: center;
+  font-size: 2rem;
+  color: #274d8a;
+  margin-top: 1rem; }
+
+main .parrafo1-integrantes {
+  margin: 1rem;
+  font-size: 1.5rem; }
+
+main .parrafo2-integrantes {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.5rem; }
+
+main .lista-integrantes .integrante {
+  font-size: 1.25rem; }
+
+main img {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem; }
+
+/* Estilos de Main: Logros */
+main .texto-logros {
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0; }
+
+main .lista-logros li {
+  font-size: 1.5rem;
+  margin: 1rem; }
+
+main .mensaje-final-logros {
+  text-align: center;
+  font-size: 1.25rem; }
+
+/*Estilos de Main: Fotos */
+body main .titulo-fotos {
+  padding-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #274d8a; }
+
+body main .fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  body main .fotos .foto1 .posicion-tarjeta, body main .fotos .foto2 .posicion-tarjeta, body main .fotos .foto3 .posicion-tarjeta, body main .fotos .foto4 .posicion-tarjeta {
+    margin: 1rem 1rem 0 1rem; }
+  body main .fotos .foto5 .posicion-tarjeta {
+    margin: 1rem; }
+
+/*Estilos de Main: Unete */
+body .main-form {
+  padding: 0 1.5em; }
+  body .main-form .content {
+    max-width: 73.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em; }
+  body .main-form .logo-form {
+    text-align: center;
+    font-size: 3em; }
+    body .main-form .logo-form span {
+      color: #274d8a; }
+  body .main-form .contact-wrapper {
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.3); }
+    body .main-form .contact-wrapper > * {
+      padding: 1em; }
+    body .main-form .contact-wrapper .contact-form {
+      background: #ddddddb4; }
+      body .main-form .contact-wrapper .contact-form h3 {
+        text-align: center; }
+      body .main-form .contact-wrapper .contact-form form p {
+        margin: 0;
+        padding: 1em; }
+        body .main-form .contact-wrapper .contact-form form p .boton-enviar {
+          background: #274d8a;
+          border: 0;
+          text-transform: uppercase;
+          padding: 1em; }
+          body .main-form .contact-wrapper .contact-form form p .boton-enviar a {
+            text-decoration: none;
+            color: #FFF; }
+      body .main-form .contact-wrapper .contact-form form button, body .main-form .contact-wrapper .contact-form form input, body .main-form .contact-wrapper .contact-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 0.0625rem solid #274d8a; }
+    body .main-form .contact-wrapper .contact-info {
+      background: #7d7783; }
+      body .main-form .contact-wrapper .contact-info h4 {
+        text-transform: uppercase; }
+      body .main-form .contact-wrapper .contact-info ul {
+        list-style: none;
+        padding: 0; }
+        body .main-form .contact-wrapper .contact-info ul li {
+          padding: .3em; }
+      body .main-form .contact-wrapper .contact-info h4, body .main-form .contact-wrapper .contact-info ul, body .main-form .contact-wrapper .contact-info p {
+        text-align: center;
+        margin: 0 0 1rem 0; }
+
+/* Estilos de Footer */
+footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: #413F42; }
+  footer a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5rem; }
+    footer a:hover {
+      color: #b70e21; }
+  footer p {
+    color: #FFF; }
+
+/* Media Querys */
+@media (max-width: 992px) {
+  /*Estilos de Header: Navbar */
+  body header .container-fluid {
+    padding: 0 5%; } }
+
+@media (max-width: 450px) {
+  /* Estilos de Header: Navbar */
+  body header .container-fluid div .modal-dialog {
+    width: 5,125rem; } }
+
+@media (max-width: 425px) {
+  /* Estilos de Main: Unete */
+  .main-form .content h2 {
+    font-size: 1.5rem; }
+  .main-form .content .contact-wrapper .contact-info h4, .main-form .content .contact-wrapper .contact-info ul, .main-form .content .contact-wrapper .contact-info p {
+    font-size: 0.87rem; }
+  /* Estilos del Footer*/
+  footer {
+    font-size: 0.8rem; } }
+
+@media (min-width: 768px) {
+  /* Estilos de Main: Home */
+  main .container-main {
+    display: flex;
+    justify-content: space-between; }
+    main .container-main img {
+      width: 18.75rem;
+      display: block; }
+  /* Estilos de Main: Unete */
+  .main-form .content .contact-wrapper .contact-info h4, .main-form .content .contact-wrapper .contact-info ul, .main-form .content .contact-wrapper .contact-info p {
+    font-size: 1.25rem; } }
+
+@media (min-width: 1024px) {
+  /* Estilos de Main: Logros */
+  main .fotos-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem; }
+    main .fotos-container .logros-foto1, main .fotos-container .logros-foto2, main .fotos-container .logros-foto3 {
+      height: 8rem;
+      margin: 0.25rem 0 0.25rem 0; }
+  /* Estilos de Main: Unete */
+  .main-form .content .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+    .main-form .content .contact-wrapper > * {
+      padding: 2em; }
+    .main-form .content .contact-wrapper .contact-form form {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .main-form .content .contact-wrapper .contact-form form .block {
+        grid-column: 1 / 3; }
+        .main-form .content .contact-wrapper .contact-form form .block .boton-enviar:hover, .main-form .content .contact-wrapper .contact-form form .block .boton-enviar:focus {
+          transition: .3s;
+          background: #b70e21;
+          color: #fff;
+          outline: 0; }
+    .main-form .content .contact-wrapper .contact-info ul {
+      text-align: left; }
+    .main-form .content .contact-wrapper .contact-info h4, .main-form .content .contact-wrapper .contact-info ul, .main-form .content .contact-wrapper .contact-info p {
+      padding: 1em;
+      font-size: 1.15rem; } }

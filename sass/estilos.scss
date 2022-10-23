@@ -1,0 +1,23 @@
+// Importacion de paginas de estilos
+
+//CSS Estilos Fuente de letras
+/* Fuente de letras */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+//CSS Estilos Reset y Body
+@import "estilos-secundarios/reset-body";
+
+//SASS Variables
+@import "estilos-secundarios/variables";
+
+//CSS Estilos Header
+@import "estilos-secundarios/header";
+
+//CSS Estilos Main
+@import "estilos-secundarios/main";
+
+//CSS Estilos Footer
+@import "estilos-secundarios/footer";
+
+//CSS Estilos Media Querys
+@import "estilos-secundarios/media-querys";

@@ -1,0 +1,132 @@
+// Media Querys
+
+/* Media Querys */
+
+
+@media (max-width: 992px){
+    /*Estilos de Header: Navbar */
+    body{
+        header{
+            .container-fluid{
+                padding: 0 5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    /* Estilos de Header: Navbar */ 
+    body{
+        header{
+            .container-fluid{
+                div{
+                    .modal-dialog{
+                        width: 5,125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    /* Estilos de Main: Unete */
+    .main-form{
+        .content{
+            h2{
+                font-size: 1.5rem;
+            }
+            .contact-wrapper{
+                .contact-info{
+                    h4, ul, p{
+                        font-size: 0.87rem;
+                    }
+                }
+            }
+        }
+    }
+    /* Estilos del Footer*/ 
+    footer{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px){
+    /* Estilos de Main: Home */
+    main{
+        .container-main{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 18.75rem;
+                display: block;
+            }
+        }
+    }
+    /* Estilos de Main: Unete */
+    .main-form{
+        .content{
+            .contact-wrapper{
+                .contact-info{
+                    h4, ul, p{
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1024px){
+    /* Estilos de Main: Logros */
+    main{
+        .fotos-container{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 1rem;
+            .logros-foto1, .logros-foto2, .logros-foto3{
+                height: 8rem;
+                margin: 0.25rem 0 0.25rem 0;
+            }
+        }
+    }
+    /* Estilos de Main: Unete */
+    .main-form{
+        .content{
+            .contact-wrapper{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                > *{
+                    padding: 2em;
+                }
+                .contact-form{
+                    form{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        .block{
+                            grid-column: 1 / 3;
+                            .boton-enviar{
+                                &:hover, &:focus{
+                                    transition: .3s;
+                                    background: $color-trans1;
+                                    color: $color-texto1;
+                                    outline: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact-info{
+                    ul{
+                        text-align: left;
+                    }
+                    h4, ul, p{
+                        padding: 1em;
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+// Estilos de Main 
+
+/* Estilos de Main */
+
+/* Estilos de Main: Home */
+main{
+    .container-main{
+        .texto{
+            .titulo-index{
+                color: $color-texto3;
+                text-align: center;
+                font-weight: 900;
+                padding: 1rem;
+            }
+            .parrafo-index1{
+                font-size: 1.5rem;
+                padding: 0 1rem;
+            }
+            .parrafo-index2{
+                font-size: 2rem;
+                text-align: center;
+                color: $color-texto3;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+}
+
+/* Estilos de Main: Integrantes */
+main{
+    .titulo-integrantes{
+        text-align: center;
+        font-size: 2rem;
+        color: $color-texto3;
+        margin-top: 1rem;
+    }
+    .parrafo1-integrantes{
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    .parrafo2-integrantes{
+        margin: 0 1rem 1rem 1rem;
+        font-size: 1.5rem;
+    }
+    .lista-integrantes{
+        .integrante{
+            font-size: 1.25rem;
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+}
+
+/* Estilos de Main: Logros */ 
+main{
+    .texto-logros{
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .lista-logros{
+        li{
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+    }
+    .mensaje-final-logros{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+}
+
+/*Estilos de Main: Fotos */
+body{
+    main{
+        .titulo-fotos{
+            padding-top: 1rem;
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-texto3;
+        }
+        .fotos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .foto1, .foto2, .foto3, .foto4{
+                .posicion-tarjeta{
+                    margin: 1rem 1rem 0 1rem;
+                }
+            }
+            .foto5{
+                .posicion-tarjeta{
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/*Estilos de Main: Unete */
+body{
+    .main-form{
+        padding: 0 1.5em;
+        .content{
+            max-width: 73.125rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.5em;
+        }
+        .logo-form{
+            text-align: center;
+            font-size: 3em;
+            span{
+                color: $color-trans2;
+            }
+        }
+        .contact-wrapper{
+            box-shadow: 0 0 1.25rem rgba(0, 0, 0, .3);
+            > *{
+                padding: 1em;
+            }
+            .contact-form{
+                background: $color-bg5;
+                h3{
+                    text-align: center;
+                }
+                form{
+                    p{
+                        margin: 0;
+                        padding: 1em;
+                        .boton-enviar{
+                            background: $color-button1;
+                            border: 0;
+                            text-transform: uppercase;
+                            padding: 1em;
+                            a{
+                                text-decoration: none;
+                                color: $color-letra1;
+                            }
+                        }
+                    }
+                    button, input, textarea{
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: none;
+                        border-bottom: 0.0625rem solid $color-button1;
+                    }
+                }
+            }
+            .contact-info{
+                background: #7d7783;
+                h4{
+                    text-transform: uppercase;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        padding: .3em;
+                    }
+                }
+                h4, ul, p{
+                    text-align: center;
+                    margin: 0 0 1rem 0;
+                }
+            }
+        }
+    }
+}
